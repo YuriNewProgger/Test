@@ -1,4 +1,4 @@
-﻿namespace interShop;
+﻿namespace Client;
 
 public class Product
 {
