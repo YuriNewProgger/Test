@@ -1,0 +1,12 @@
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\bin\Debug\net6.0\ModelLibrary.deps.json
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\bin\Debug\net6.0\ModelLibrary.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\bin\Debug\net6.0\ref\ModelLibrary.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\bin\Debug\net6.0\ModelLibrary.pdb
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\obj\Debug\net6.0\ModelLibrary.csproj.AssemblyReference.cache
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\obj\Debug\net6.0\ModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\obj\Debug\net6.0\ModelLibrary.AssemblyInfoInputs.cache
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\obj\Debug\net6.0\ModelLibrary.AssemblyInfo.cs
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\obj\Debug\net6.0\ModelLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\obj\Debug\net6.0\ModelLibrary.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\obj\Debug\net6.0\ref\ModelLibrary.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ModelLibrary\obj\Debug\net6.0\ModelLibrary.pdb
