@@ -1,0 +1,15 @@
+﻿@model List<ModelLibrary.ICatalog>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Categories</h2>
+
+<ul>
+    @foreach (var item in ViewBag.Categories)
+    {
+        <li>@item.Name</li>
+    }
+</ul>

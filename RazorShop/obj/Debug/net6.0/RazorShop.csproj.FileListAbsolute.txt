@@ -24,3 +24,6 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop\obj\D
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop\obj\Debug\net6.0\ref\RazorShop.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop\obj\Debug\net6.0\RazorShop.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop\obj\Debug\net6.0\RazorShop.genruntimeconfig.cache
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop\bin\Debug\net6.0\ModelLibrary.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop\bin\Debug\net6.0\ModelLibrary.pdb
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop\obj\Debug\net6.0\RazorShop.csproj.CopyComplete

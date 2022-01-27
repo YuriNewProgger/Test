@@ -1,6 +1,6 @@
-﻿namespace ModelLibrary;
+﻿namespace ModelLibrary.CatalogsWarehouse;
 
-public class Catalog
+public class GameConsoleCatalog : ICatalog
 {
     private object _key = new object();
     private List<Product> _products { get; } = new List<Product>()
@@ -10,11 +10,13 @@ public class Catalog
         new Product("Dandy", 1200)
     };
 
-    public Catalog()
+    public GameConsoleCatalog()
     {
     }
 
-    public List<Product> GetProduct(string device, DateTime date)
+    public string Name { get; set; } = "Game Console";
+
+    public List<Product> GetProducts(string device, DateTime date)
     {
         if (device.Contains("Android"))
             return Discount();

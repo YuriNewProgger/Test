@@ -1,0 +1,14 @@
+﻿@model List<ModelLibrary.Product>
+
+@{
+    ViewBag.Title = "Список товаров";
+    Layout = "_Layout";
+}
+
+<h2>Список товаров</h2>
+<ul>
+    @foreach (var item in ViewBag.Products)
+    {
+        <li>@item</li>
+    }
+</ul>

@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/GetCatalog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xHZXRDYXRhbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/GetCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xHZXRDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

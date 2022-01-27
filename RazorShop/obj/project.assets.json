@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ModelLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ModelLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModelLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ModelLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ModelLibrary/ModelLibrary.csproj",
+      "msbuildProject": "../ModelLibrary/ModelLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ModelLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Dampel\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Dampel\\Desktop\\ШаГ ASP\\classwork\\LessonTwo\\interShop\\ModelLibrary\\ModelLibrary.csproj": {
+              "projectPath": "C:\\Users\\Dampel\\Desktop\\ШаГ ASP\\classwork\\LessonTwo\\interShop\\ModelLibrary\\ModelLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
