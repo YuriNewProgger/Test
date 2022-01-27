@@ -7,14 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Client/1.0.0": {
+        "dependencies": {
+          "ClientApi": "1.0.0"
+        },
         "runtime": {
           "Client.dll": {}
+        }
+      },
+      "ClientApi/1.0.0": {
+        "dependencies": {
+          "ModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ClientApi.dll": {}
+        }
+      },
+      "ModelLibrary/1.0.0": {
+        "runtime": {
+          "ModelLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClientApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ModelLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

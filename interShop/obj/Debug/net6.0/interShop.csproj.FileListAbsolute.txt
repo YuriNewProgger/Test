@@ -19,3 +19,6 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\obj\D
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\obj\Debug\net6.0\ref\interShop.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\obj\Debug\net6.0\interShop.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\obj\Debug\net6.0\interShop.genruntimeconfig.cache
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\ModelLibrary.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\ModelLibrary.pdb
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\obj\Debug\net6.0\interShop.csproj.CopyComplete

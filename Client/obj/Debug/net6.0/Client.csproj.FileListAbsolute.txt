@@ -13,3 +13,8 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\obj\Debu
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\obj\Debug\net6.0\ref\Client.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\obj\Debug\net6.0\Client.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\obj\Debug\net6.0\Client.genruntimeconfig.cache
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\ClientApi.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\ModelLibrary.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\ClientApi.pdb
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\ModelLibrary.pdb
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\obj\Debug\net6.0\Client.csproj.CopyComplete

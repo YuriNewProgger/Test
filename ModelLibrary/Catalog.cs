@@ -1,4 +1,4 @@
-﻿namespace interShop;
+﻿namespace ModelLibrary;
 
 public class Catalog
 {
@@ -9,7 +9,6 @@ public class Catalog
         new Product("Sony", 5000),
         new Product("Dandy", 1200)
     };
-    private string _device { get; set; }
 
     public Catalog()
     {
@@ -17,34 +16,28 @@ public class Catalog
 
     public List<Product> GetProduct(string device, DateTime date)
     {
-        List<Product> tmpProducts = _products.Select(i => new Product(i.Title, i.Price)).ToList();
-        _device = device;
-        
         if (device.Contains("Android"))
-            foreach (var item in _products)
-            {
-                item.Price -= (item.Price / 100) * 10;
-            }
+            return Discount();
         else if (device.Contains("iPhone"))
-            foreach (var item in _products)
-            {
-                item.Price += (item.Price / 100) * 50;
-            }
-        
-        IncrementPriceByWeekDay(tmpProducts, date);
-
-        return tmpProducts;
+            return Margin();
+        else
+            return _products.Select(i => new Product(i.Title, i.Price)).ToList();
     }
 
-    public List<Product> AddProduct(Product newProduct)
+    public void AddProduct(Product newProduct)
     {
         lock (_key)
         {
             _products.Add(newProduct);
         }
-        
-        return GetProduct(_device, DateTime.Today);
     }
+
+    private List<Product> Discount() => 
+        _products.Select(i => new Product(i.Title, i.Price -= (i.Price / 100) * 10)).ToList();
+    
+    private List<Product> Margin() =>
+        _products.Select(i => new Product(i.Title, i.Price += (i.Price / 100) * 50)).ToList();
+    
 
     private void IncrementPriceByWeekDay(List<Product> listProducts, DateTime date)
     {

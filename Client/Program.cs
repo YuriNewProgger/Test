@@ -1,11 +1,14 @@
 ﻿using System.Net.Http.Json;
-using Client;
+using ClientApi;
+using ModelLibrary;
+
 
 List<string> menuItems = new List<string>()
 {
     "Display products - 1", "Add product - 2", "Clear display - 3", "Exit - 0"
 };
 
+InternetShopClient shopClient = new InternetShopClient(null);
 
 try
 {
@@ -18,8 +21,10 @@ try
         
         switch (menu)
         {
-            case 1: PrintProduct(); break;
-            case 2: AddProduct(); break;
+            case 1: 
+                var listPropucts = shopClient.GetProducts().Result;
+                PrintProduct(listPropucts); break;
+            case 2: shopClient.AddProduct(CreateProduct()); break;
             case 3: Console.Clear();break;
         }
         
@@ -44,35 +49,10 @@ void PrintMenu()
     Console.WriteLine("\n");
 }
 
-async Task<List<Product>> GetProduct()
+void PrintProduct(List<Product> _listProducts)
 {
-    var client = new HttpClient();
-    const string uri = "http://localhost:5282/catalog";
-    var products = await client.GetFromJsonAsync<List<Product>>(uri);
-    return products;
-}
-
-void PrintProduct()
-{
-    Task<List<Product>> result = GetProduct();
-
-    List<Product> products = result.Result;
-
-    foreach (var item in products)
-    {
+    foreach (var item in _listProducts)
         Console.WriteLine(item);
-    }
-}
-
-
-async void AddProduct()
-{
-
-    Product newProduct = CreateProduct();
-    var client = new HttpClient();
-    const string uri = "http://localhost:5282/catalogAddProductPost";
-    await client.PostAsJsonAsync(uri, newProduct);
-    
 }
 
 Product CreateProduct()

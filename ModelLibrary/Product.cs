@@ -1,4 +1,4 @@
-﻿namespace Client;
+﻿namespace ModelLibrary;
 
 public class Product
 {
