@@ -24,7 +24,7 @@ try
             case 1: 
                 var listPropucts = shopClient.GetProducts().Result;
                 PrintProduct(listPropucts); break;
-            case 2: shopClient.AddProduct(CreateProduct()); break;
+            case 2: await shopClient.AddProduct(CreateProduct()); break;
             case 3: Console.Clear();break;
         }
         

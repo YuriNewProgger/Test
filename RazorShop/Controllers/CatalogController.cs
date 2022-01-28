@@ -17,15 +17,15 @@ public class CatalogController : Controller
             foreach (var product in item.GetProducts(Request.Headers["User-Agent"].ToString(), DateTime.Now))
              products.Add(product);
         
-        ViewBag.Products = products;
+        //ViewBag.Products = products;
         
-        return View();
+        return View(products);
     }
 
     public IActionResult GetCategories()
     {
-        ViewBag.Categories = _categories;
+        //ViewBag.Categories = _categories;
         
-        return View();
+        return View(_categories);
     }
 }

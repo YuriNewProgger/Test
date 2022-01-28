@@ -17,7 +17,7 @@ public class InternetShopClient
     public Task<List<Product>> GetProducts() =>
         _client.GetFromJsonAsync<List<Product>>($"{_host}/catalog");
 
-    public void AddProduct(Product product) =>
+    public Task AddProduct(Product product) =>
         _client.PostAsJsonAsync($"{_host}/catalogAddProductPost", product);
 
 }

@@ -2,8 +2,8 @@
 
 public static class CatalogsWarehouse
 {
-    private static ICatalog consoleGame = new GameConsoleCatalog();
-    private static ICatalog television = new TelevisionCatalog();
+    private static readonly ICatalog consoleGame = new GameConsoleCatalog();
+    private static readonly ICatalog television = new TelevisionCatalog();
 
     public static List<ICatalog> Categories { get; } = new List<ICatalog>()
     {
