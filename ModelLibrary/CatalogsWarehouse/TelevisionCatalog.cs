@@ -9,17 +9,21 @@ public class TelevisionCatalog : ICatalog
         new Product("Sony", 43000),
         new Product("Samsung", 120000)
     };
-    
+
+    public int Id { get; } = 1;
     public string Name { get; set; } = "Television";
     
     public List<Product> GetProducts(string device, DateTime dateTime)
     {
-        if (device.Contains("Android"))
-            return Discount();
-        else if (device.Contains("iPhone"))
-            return Margin();
-        else
-            return _products.Select(i => new Product(i.Title, i.Price)).ToList();
+        lock (_key)
+        {
+            if (device.Contains("Android"))
+                return Discount();
+            else if (device.Contains("iPhone"))
+                return Margin();
+            else
+                return _products.Select(i => new Product(i.Title, i.Price)).ToList();
+        }
     }
 
     public void AddProduct(Product product)

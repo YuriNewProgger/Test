@@ -13,17 +13,22 @@ public class GameConsoleCatalog : ICatalog
     public GameConsoleCatalog()
     {
     }
+    
+    public int Id { get; } = 2;
 
     public string Name { get; set; } = "Game Console";
 
     public List<Product> GetProducts(string device, DateTime date)
     {
-        if (device.Contains("Android"))
-            return Discount();
-        else if (device.Contains("iPhone"))
-            return Margin();
-        else
-            return _products.Select(i => new Product(i.Title, i.Price)).ToList();
+        lock (_key)
+        {
+            if (device.Contains("Android"))
+                return Discount();
+            else if (device.Contains("iPhone"))
+                return Margin();
+            else
+                return _products.Select(i => new Product(i.Title, i.Price)).ToList();
+        }
     }
 
     public void AddProduct(Product newProduct)

@@ -17,15 +17,34 @@ public class CatalogController : Controller
             foreach (var product in item.GetProducts(Request.Headers["User-Agent"].ToString(), DateTime.Now))
              products.Add(product);
         
-        //ViewBag.Products = products;
-        
         return View(products);
     }
 
     public IActionResult GetCategories()
     {
-        //ViewBag.Categories = _categories;
-        
         return View(_categories);
     }
+    
+    [HttpGet]                       
+    public IActionResult AddProduct()
+    {              
+        return View();               
+    }     
+    
+    [HttpPost]
+    public IActionResult AddProduct(string Title, decimal Price, string Category)
+    {
+        if (string.IsNullOrEmpty(Title))
+            return LocalRedirect("~/Catalog/ErrorPage");
+        
+        CatalogsWarehouse.GetCategory(Category).AddProduct(new Product(Title, Price));
+        
+        return LocalRedirect("~/Home/Index");               
+    }  
+    
+    public IActionResult ErrorPage()
+    {              
+        return View();               
+    }  
+
 }
