@@ -78,4 +78,23 @@ public class CatalogController : Controller
         return LocalRedirect("~/Catalog/GetCategories");
     }
 
+    public IActionResult GetInformationSelectedProduct(string productName)
+    {
+        Product findedProduct = null;
+        foreach (var category in CategoriesWarehouse.GetAllCategories())
+        {
+            foreach (var product in category.GetProducts(Request.Headers["User-Agent"].ToString(), DateTime.Now))
+            {
+                if (product.Title == productName)
+                {
+                    findedProduct = product;
+                    break;
+                }
+                    
+            }
+        }
+        
+        return View(findedProduct);
+    }
+
 }

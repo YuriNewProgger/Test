@@ -8,7 +8,11 @@
 <h2>List all products</h2>
 <ul>
     @foreach (var item in Model)
-    {
-        <li>@item </li>
-    }
+        {
+            <li>@Html.ActionLink(@item.Title, "GetInformationSelectedProduct", new {productName=item.Title}) </li>
+        }
+    @* @foreach (var item in Model) *@
+    @* { *@
+    @*     <li>@item </li> *@
+    @* } *@
 </ul>
