@@ -1,15 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ModelLibrary;
 using ModelLibrary.CatalogsWarehouse;
+using ModelLibrary.Categories;
+using RazorShop.Models;
 
 namespace RazorShop.Controllers;
 
 public class CatalogController : Controller
 {
-    private readonly List<ICatalog> _categories = CatalogsWarehouse.GetAllCategories();
+    //private readonly List<ICatalog> _categories = CatalogsWarehouse.GetAllCategories();
+    private List<ICategory> _categories = CategoriesWarehouse.GetAllCategories();
     
     // GET
-    public IActionResult GetCatalog()
+    public IActionResult GetProducts()
     {
         List<Product> products = new List<Product>();
         
@@ -22,29 +26,56 @@ public class CatalogController : Controller
 
     public IActionResult GetCategories()
     {
-        return View(_categories);
+        List<DTO> dataTransferObjects = new List<DTO>();
+
+        foreach (var item in _categories)
+        {
+            dataTransferObjects.Add(new DTO()
+            {
+                Category = item, 
+                Products = item.GetProducts(Request.Headers["User-Agent"].ToString(), DateTime.Now)
+            });
+        }
+
+        return View(dataTransferObjects);
     }
     
     [HttpGet]                       
-    public IActionResult AddProduct()
-    {              
-        return View();               
+    public IActionResult CreateProduct()
+    {
+        return View(_categories);               
     }     
     
     [HttpPost]
-    public IActionResult AddProduct(string Title, decimal Price, string Category)
+    public IActionResult CreateProduct(string Title, decimal? Price,  string Category)
     {
-        if (string.IsNullOrEmpty(Title))
+        if (string.IsNullOrEmpty(Title) || Price is null || string.IsNullOrEmpty(Category))
             return LocalRedirect("~/Catalog/ErrorPage");
         
-        CatalogsWarehouse.GetCategory(Category).AddProduct(new Product(Title, Price));
-        
-        return LocalRedirect("~/Home/Index");               
+        CategoriesWarehouse.GetCategory(Category).AddProduct(new Product(Title, Price.Value));
+        return LocalRedirect("~/Catalog/GetProducts");               
     }  
     
     public IActionResult ErrorPage()
     {              
         return View();               
-    }  
+    }
+
+    [HttpGet]
+    public IActionResult CreateCategory()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult CreateCategory(int? Id, string? Title)
+    {
+        if (Id is null || string.IsNullOrEmpty(Title))
+            return BadRequest();
+        
+        ICategory newCategory = new Category(Id.Value, Title);
+        CategoriesWarehouse.AddCategory(newCategory);
+        return LocalRedirect("~/Catalog/GetCategories");
+    }
 
 }

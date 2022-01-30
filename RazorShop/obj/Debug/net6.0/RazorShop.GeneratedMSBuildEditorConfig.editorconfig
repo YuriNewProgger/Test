@@ -15,20 +15,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\RazorShop
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/AddProduct.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xBZGRQcm9kdWN0LmNzaHRtbA==
+[C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xDcmVhdGVDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/CreateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xDcmVhdGVQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/ErrorPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xFcnJvclBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/GetCatalog.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xHZXRDYXRhbG9nLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/GetCategories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xHZXRDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Catalog/GetProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xHZXRQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Dampel/Desktop/ШаГ ASP/classwork/LessonTwo/interShop/RazorShop/Views/Home/Index.cshtml]

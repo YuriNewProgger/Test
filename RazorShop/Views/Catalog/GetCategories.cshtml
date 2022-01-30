@@ -1,15 +1,33 @@
-﻿@model List<ModelLibrary.ICatalog>
+﻿@* @model List<ModelLibrary.ICatalog> *@
+@model List<DTO>
 
 @{
     ViewBag.Title = "title";
     Layout = "_Layout";
 }
 
-<h2>Categories</h2>
 
+<h2>Categories</h2>
 <ul>
     @foreach (var item in Model)
     {
-        <li><b>Title category:</b> @item.Name <b>Id:</b> @item.Id</li>
+        <li><b>Title category:</b> @item.Category.Name <b>Id:</b> @item.Category.Id</li>
     }
 </ul>
+
+<br/>
+<br/>
+<br/>
+
+<h2>Products by categories</h2>
+<select>
+    @foreach (var category in Model)
+    {
+        <optgroup label="@category.Category.Name">
+            @foreach (var itemProduct in category.Products)
+            {
+                <option>@itemProduct.Title Price - @itemProduct.Price</option>
+            }
+        </optgroup>
+    }
+</select>

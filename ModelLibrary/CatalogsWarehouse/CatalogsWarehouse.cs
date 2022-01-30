@@ -1,5 +1,5 @@
 ﻿namespace ModelLibrary.CatalogsWarehouse;
-
+[Obsolete]
 public static class CatalogsWarehouse
 {
     private static readonly ICatalog consoleGame = new GameConsoleCatalog();

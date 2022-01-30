@@ -13,6 +13,6 @@ public class Product
 
     public override string ToString()
     {
-        return $"{Title} {Price}";
+        return $"Title:{Title} Price:{Price} ";
     }
 }

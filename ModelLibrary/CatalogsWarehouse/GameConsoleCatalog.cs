@@ -1,5 +1,5 @@
 ﻿namespace ModelLibrary.CatalogsWarehouse;
-
+[Obsolete]
 public class GameConsoleCatalog : ICatalog
 {
     private object _key = new object();
