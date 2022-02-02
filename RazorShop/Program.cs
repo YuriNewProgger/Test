@@ -1,7 +1,10 @@
+using ModelLibrary.Categories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<IRepositiry, CategoryRepositories>();
 
 var app = builder.Build();
 

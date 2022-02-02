@@ -9,17 +9,21 @@ namespace RazorShop.Controllers;
 
 public class CatalogController : Controller
 {
-    //private readonly List<ICatalog> _categories = CatalogsWarehouse.GetAllCategories();
-    private List<ICategory> _categories = CategoriesWarehouse.GetAllCategories();
+    private IRepositiry categories;
+
+    public CatalogController(IRepositiry _categories)
+    {
+        categories = _categories;
+    }
     
     // GET
     public IActionResult GetProducts()
     {
         List<Product> products = new List<Product>();
         
-        foreach (var item in _categories)
+        foreach (var item in categories.GetAllCategories())
             foreach (var product in item.GetProducts(Request.Headers["User-Agent"].ToString(), DateTime.Now))
-             products.Add(product);
+                products.Add(product);
         
         return View(products);
     }
@@ -28,7 +32,7 @@ public class CatalogController : Controller
     {
         List<DTO> dataTransferObjects = new List<DTO>();
 
-        foreach (var item in _categories)
+        foreach (var item in categories.GetAllCategories())
         {
             dataTransferObjects.Add(new DTO()
             {
@@ -43,7 +47,7 @@ public class CatalogController : Controller
     [HttpGet]                       
     public IActionResult CreateProduct()
     {
-        return View(_categories);               
+        return View(categories.GetAllCategories());               
     }     
     
     [HttpPost]
@@ -52,7 +56,7 @@ public class CatalogController : Controller
         if (string.IsNullOrEmpty(Title) || Price is null || string.IsNullOrEmpty(Category))
             return LocalRedirect("~/Catalog/ErrorPage");
         
-        CategoriesWarehouse.GetCategory(Category).AddProduct(new Product(Title, Price.Value));
+        categories.GetAllCategories().Where(i => i.Name == Category).FirstOrDefault().AddProduct(new Product(Title, Price.Value));
         return LocalRedirect("~/Catalog/GetProducts");               
     }  
     
@@ -74,14 +78,15 @@ public class CatalogController : Controller
             return BadRequest();
         
         ICategory newCategory = new Category(Id.Value, Title);
-        CategoriesWarehouse.AddCategory(newCategory);
+        categories.AddCategory(newCategory);
         return LocalRedirect("~/Catalog/GetCategories");
     }
 
     public IActionResult GetInformationSelectedProduct(string productName)
     {
         Product findedProduct = null;
-        foreach (var category in CategoriesWarehouse.GetAllCategories())
+        
+        foreach (var category in categories.GetAllCategories())
         {
             foreach (var product in category.GetProducts(Request.Headers["User-Agent"].ToString(), DateTime.Now))
             {
