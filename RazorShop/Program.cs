@@ -1,10 +1,12 @@
 using ModelLibrary.Categories;
+using ModelLibrary.Time;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IRepositiry, CategoryRepositories>();
+builder.Services.AddSingleton<ITime, UTCTime>();
 
 var app = builder.Build();
 

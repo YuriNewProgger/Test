@@ -1,0 +1,9 @@
+﻿@model ModelLibrary.Time.ITime
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Current time by UTC</h2>
+<h3>@Model.GetTime()</h3>
