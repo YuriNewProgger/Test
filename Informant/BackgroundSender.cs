@@ -14,11 +14,11 @@ public class BackgroundSender : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        using var timer = new PeriodicTimer(TimeSpan.FromMinutes(1));
+        using var timer = new PeriodicTimer(TimeSpan.FromMinutes(60));
         var sw = Stopwatch.StartNew();
         while (await timer.WaitForNextTickAsync(stoppingToken))
         {
-            _sender.Send($"Сервер работает {sw.Elapsed}");
+            _sender.Send($"Status: server working {sw.Elapsed} \nRAM - {(Process.GetProcessesByName("Informant")[0].WorkingSet64 / 1024).ToString()} KB");
         }
     }
 }

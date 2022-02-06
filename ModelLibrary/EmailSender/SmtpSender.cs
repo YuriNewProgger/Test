@@ -12,11 +12,12 @@ public class SmtpSender : IEmailSender
         
         MailMessage m = new MailMessage(from, to);
         m.Subject = "Status working";
-        m.Body = "Intershop: Status-working";
+        m.Body = message;
         
         SmtpClient smtp = new SmtpClient("smtp.beget.com", 25);
         smtp.Credentials = new NetworkCredential("asp2022@rodion-m.ru", "aHGnOlz7");
         smtp.EnableSsl = true;
+        
         smtp.Send(m);
     }
 }
