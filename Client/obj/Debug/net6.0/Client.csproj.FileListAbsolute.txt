@@ -18,3 +18,7 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debu
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\ClientApi.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\ModelLibrary.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\obj\Debug\net6.0\Client.csproj.CopyComplete
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Client\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "4a8/Y1kfxH/bviK/T50j2nDT0fs+fDNXB2xW522d36+LrW2zgWVVl8fNUljTPWaVfscpv9EKW34xpBiVIzGu4A==",
+  "dgSpecHash": "jvQrMe8kMFstHklVEfU0aRZq4kclx6U5bMYEfrpSnTHrMTCHd75NNo7CVoak3fTxS2Q+xiL0KXg0WRVzHMu60g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dampel\\Desktop\\ШаГ ASP\\classwork\\LessonTwo\\interShop\\RazorShop\\RazorShop.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dampel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.2-mauipre.1.22054.8\\microsoft.extensions.dependencyinjection.abstractions.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\Dampel\\.nuget\\packages\\microsoft.extensions.options\\6.0.2-mauipre.1.22054.8\\microsoft.extensions.options.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\Dampel\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.2-mauipre.1.22054.8\\microsoft.extensions.primitives.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\Dampel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.2-mauipre.1.22054.8\\system.runtime.compilerservices.unsafe.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+  ],
   "logs": []
 }

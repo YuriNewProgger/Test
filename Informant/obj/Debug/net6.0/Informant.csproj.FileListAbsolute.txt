@@ -22,3 +22,7 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\obj\D
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\obj\Debug\net6.0\Informant.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\obj\Debug\net6.0\Informant.genruntimeconfig.cache
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\obj\Debug\net6.0\Informant.csproj.AssemblyReference.cache
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
