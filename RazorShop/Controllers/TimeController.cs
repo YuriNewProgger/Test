@@ -5,15 +5,15 @@ namespace RazorShop.Controllers;
 
 public class TimeController : Controller
 {
-    private ITime utcCurrentTime { get; }
-    public TimeController(ITime _time)
+    private IClock UtcCurrentClock { get; }
+    public TimeController(IClock clock)
     {
-        utcCurrentTime = _time;
+        UtcCurrentClock = clock;
     }
     // GET
     public IActionResult Index()
     {
         //time.GetTime();
-        return View(utcCurrentTime);
+        return View(UtcCurrentClock);
     }
 }

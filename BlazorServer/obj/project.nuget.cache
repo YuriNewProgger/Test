@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "8zdHJElVNVGKmm/1cUfctH64og7J6S6BQVgGISrFOdHb3Cj0KloU6K5Eytyje8nIWLaUPOA+RnXdjnVc0Dpy2w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Dampel\\Desktop\\ШаГ ASP\\classwork\\LessonTwo\\interShop\\BlazorServer\\BlazorServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dampel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.2-mauipre.1.22054.8\\microsoft.extensions.dependencyinjection.abstractions.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\Dampel\\.nuget\\packages\\microsoft.extensions.options\\6.0.2-mauipre.1.22054.8\\microsoft.extensions.options.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\Dampel\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.2-mauipre.1.22054.8\\microsoft.extensions.primitives.6.0.2-mauipre.1.22054.8.nupkg.sha512",
+    "C:\\Users\\Dampel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.2-mauipre.1.22054.8\\system.runtime.compilerservices.unsafe.6.0.2-mauipre.1.22054.8.nupkg.sha512"
+  ],
+  "logs": []
+}

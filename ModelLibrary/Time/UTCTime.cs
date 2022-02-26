@@ -1,9 +1,10 @@
 ﻿namespace ModelLibrary.Time;
 
-public class UTCTime : ITime
+public class UtcClock : IClock
 {
-    public DateTime GetTime()
+    public TimeOnly GetTime()
     {
-        return DateTime.UtcNow;
+        return new TimeOnly( DateTime.UtcNow.Hour, DateTime.UtcNow.Minute, DateTime.UtcNow.Second);
+        
     }
 }

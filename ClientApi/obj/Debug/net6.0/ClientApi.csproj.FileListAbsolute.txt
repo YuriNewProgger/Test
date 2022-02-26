@@ -1,6 +1,5 @@
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\bin\Debug\net6.0\ClientApi.deps.json
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\bin\Debug\net6.0\ClientApi.dll
-C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\bin\Debug\net6.0\ref\ClientApi.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\bin\Debug\net6.0\ClientApi.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\bin\Debug\net6.0\ModelLibrary.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\bin\Debug\net6.0\ModelLibrary.pdb
@@ -13,3 +12,4 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\obj\D
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\obj\Debug\net6.0\ClientApi.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\obj\Debug\net6.0\ref\ClientApi.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\obj\Debug\net6.0\ClientApi.pdb
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\ClientApi\obj\Debug\net6.0\refint\ClientApi.dll

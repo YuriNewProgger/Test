@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApi", "ClientApi\Clie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Informant", "Informant\Informant.csproj", "{08B4FA30-6994-486A-BEB8-DD5F361C0A3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServer", "BlazorServer\BlazorServer.csproj", "{3AE8117E-866D-454B-BE5E-817E946DDEAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{08B4FA30-6994-486A-BEB8-DD5F361C0A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08B4FA30-6994-486A-BEB8-DD5F361C0A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08B4FA30-6994-486A-BEB8-DD5F361C0A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE8117E-866D-454B-BE5E-817E946DDEAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE8117E-866D-454B-BE5E-817E946DDEAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE8117E-866D-454B-BE5E-817E946DDEAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE8117E-866D-454B-BE5E-817E946DDEAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

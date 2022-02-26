@@ -1,0 +1,15 @@
+@page "/"
+@using ModelLibrary.Time
+
+@inject IClock _clock;
+
+<PageTitle>Index</PageTitle>
+
+<h1>Welcome to InterShop</h1>
+<div>Time now: @GetCurrentTime()</div>
+
+@code{
+
+    protected TimeOnly GetCurrentTime() => _clock.GetTime();
+    
+}

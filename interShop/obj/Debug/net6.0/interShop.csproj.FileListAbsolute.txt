@@ -4,7 +4,6 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\D
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\interShop.deps.json
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\interShop.runtimeconfig.json
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\interShop.dll
-C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\ref\interShop.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\interShop.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\obj\Debug\net6.0\interShop.csproj.AssemblyReference.cache
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\obj\Debug\net6.0\interShop.GeneratedMSBuildEditorConfig.editorconfig
@@ -26,3 +25,4 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\D
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\interShop\obj\Debug\net6.0\refint\interShop.dll

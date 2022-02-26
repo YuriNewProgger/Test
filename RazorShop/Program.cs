@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<IRepositiry, CategoryRepositories>();
-builder.Services.AddSingleton<ITime, UTCTime>();
+builder.Services.AddSingleton<IClock, UtcClock>();
 
 var app = builder.Build();
 

@@ -4,7 +4,6 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\D
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Informant.deps.json
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Informant.runtimeconfig.json
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Informant.dll
-C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\ref\Informant.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Informant.pdb
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\ModelLibrary.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\ModelLibrary.pdb
@@ -26,3 +25,4 @@ C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\D
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Dampel\Desktop\ШаГ ASP\classwork\LessonTwo\interShop\Informant\obj\Debug\net6.0\refint\Informant.dll

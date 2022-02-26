@@ -1,0 +1,16 @@
+﻿@page "/BacketPage"
+@using ModelLibrary.Backet
+
+@inject ShopingBasket basket
+
+<h3>Backet</h3>
+<p>Order list</p>
+<ul>
+@foreach (var item in basket.GetBasket())
+{
+    <li>Title product: @item.Title Price:@item.Price</li>
+}
+</ul>
+@code {
+    
+}
