@@ -1,0 +1,31 @@
+﻿@page "/CatalogPage"
+@using ModelLibrary.Categories
+@using ModelLibrary
+@using ModelLibrary.Backet
+
+@inject IRepositiry _repositiry
+@inject ShopingBasket backet
+<h3>CatalogPage</h3>
+
+@foreach (var item in _repositiry.GetAllCategories())
+{
+    <p>
+        <h3>@item.Name</h3>
+        @foreach (var prod in item.GetProducts("Android", DateTime.Now))
+        {
+            <div>
+                <ProductItem Product="prod"/> 
+                <button class="btn btn-outline-success" @onclick="() => Buy(prod)">Buy</button>
+            </div>
+            
+        }
+    </p>
+}
+
+@code {
+    
+    public void Buy(Product _product)
+    {
+        backet.AddProductToBasket(_product);
+    }
+}

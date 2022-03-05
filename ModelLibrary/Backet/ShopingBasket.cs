@@ -9,6 +9,8 @@ public class ShopingBasket
     }
 
     public void AddProductToBasket(Product product) => SelectedProducts.Add(product);
+    public void ClearBasket() => SelectedProducts.Clear();
+    public void DeleteSelectedProduct(Product product) => SelectedProducts.Remove(product);
 
     public List<Product> GetBasket() => SelectedProducts;
 

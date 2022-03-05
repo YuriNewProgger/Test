@@ -1,0 +1,29 @@
+﻿@page "/InfoProduct"
+@using ModelLibrary
+@using ModelLibrary.Categories
+
+@inject IRepositiry _repositiry
+
+<h3>InfoProduct</h3>
+<div>@Product</div>
+
+@code {
+    [Parameter]
+    public string? ProductTitle { get; set; }
+    
+    private Product? Product { get; set; }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+        foreach (var categoryItem in _repositiry.GetAllCategories())
+        {
+            foreach (var productItem in categoryItem.GetProducts("Android", DateTime.Now))
+            {
+                if(productItem.Title == ProductTitle)
+                    Product = productItem;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+﻿@using ModelLibrary
+
+<div>Title: @Product.Title Price: @Product.Price</div>
+
+@code {
+    [Parameter]
+    public Product Product { get; set; }
+}

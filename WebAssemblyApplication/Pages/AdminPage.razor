@@ -1,0 +1,35 @@
+﻿@page "/AdminPage"
+@using System.ComponentModel.DataAnnotations
+@using Microsoft.AspNetCore.Components
+@using ModelLibrary
+@using ModelLibrary.Categories
+
+@inject IRepositiry _repositiry
+
+
+<h3>AdminPage</h3>
+
+<EditForm Model="_model" OnValidSubmit="ProcessValidForm">
+ <DataAnnotationsValidator/>
+      Title: <InputText @bind-Value="_model.Title"/>
+ Price: <InputNumber @bind-Value="_model.Price"/>
+ 
+ <br/> <input type="submit" value="Add">
+ <ValidationSummary/>
+</EditForm>
+
+
+
+
+@code {
+
+    
+    private void ProcessValidForm()
+    {
+        _repositiry.GetAllCategories().Where(i => i.Name == "Console Game").FirstOrDefault().AddProduct(_model);
+    }
+    
+    private Product _model = new();
+    
+
+}

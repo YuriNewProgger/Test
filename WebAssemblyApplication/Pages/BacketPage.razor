@@ -1,0 +1,25 @@
+﻿@page "/BacketPage"
+@using ModelLibrary.Backet
+@using ModelLibrary
+
+@inject ShopingBasket basket
+
+<h3>BacketPage</h3>
+<p>Order list</p>
+<ul>
+    @foreach (var item in basket.GetBasket())
+    {
+        <li>
+            @* Title product: @item.Title Price:@item.Price *@
+            <ProductItem Product="item"/>
+            <button class="btn btn-outline-success" @onclick="() => Delete(item)">Delete</button>
+        </li>
+    }
+</ul>
+<button @onclick="() => Clear()">Clear basket</button>
+
+@code {
+    public void Clear() => basket.ClearBasket();
+
+    public void Delete(Product product) => basket.DeleteSelectedProduct(product);
+}
